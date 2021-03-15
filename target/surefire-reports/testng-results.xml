@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="UI_Automation" duration-ms="56339" started-at="2021-03-15T05:02:12 COT" finished-at="2021-03-15T05:03:09 COT">
+    <groups>
+    </groups>
+    <test name="Tests" duration-ms="56339" started-at="2021-03-15T05:02:12 COT" finished-at="2021-03-15T05:03:09 COT">
+      <class name="endava.UI_Tests">
+        <test-method status="PASS" signature="createTestEnvironment()[pri:0, instance:endava.UI_Tests@1ce92674]" name="createTestEnvironment" is-config="true" duration-ms="10" started-at="2021-03-15T05:02:12 COT" finished-at="2021-03-15T05:02:12 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTestEnvironment -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:endava.UI_Tests@1ce92674]" name="setup" is-config="true" duration-ms="8187" started-at="2021-03-15T05:02:12 COT" finished-at="2021-03-15T05:02:21 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="browseCategory()[pri:0, instance:endava.UI_Tests@1ce92674]" name="browseCategory" duration-ms="3548" started-at="2021-03-15T05:02:21 COT" finished-at="2021-03-15T05:02:24 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseCategory -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:endava.UI_Tests@1ce92674]" name="setup" is-config="true" duration-ms="7310" started-at="2021-03-15T05:02:24 COT" finished-at="2021-03-15T05:02:31 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="filterPrice()[pri:0, instance:endava.UI_Tests@1ce92674]" name="filterPrice" duration-ms="8755" started-at="2021-03-15T05:02:31 COT" finished-at="2021-03-15T05:02:40 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterPrice -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:endava.UI_Tests@1ce92674]" name="setup" is-config="true" duration-ms="8000" started-at="2021-03-15T05:02:40 COT" finished-at="2021-03-15T05:02:48 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="highToLow()[pri:0, instance:endava.UI_Tests@1ce92674]" name="highToLow" duration-ms="6061" started-at="2021-03-15T05:02:48 COT" finished-at="2021-03-15T05:02:54 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- highToLow -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:endava.UI_Tests@1ce92674]" name="setup" is-config="true" duration-ms="7055" started-at="2021-03-15T05:02:54 COT" finished-at="2021-03-15T05:03:01 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchItem()[pri:0, instance:endava.UI_Tests@1ce92674]" name="searchItem" duration-ms="7368" started-at="2021-03-15T05:03:01 COT" finished-at="2021-03-15T05:03:09 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method status="PASS" signature="dismantle()[pri:0, instance:endava.UI_Tests@1ce92674]" name="dismantle" is-config="true" duration-ms="1" started-at="2021-03-15T05:03:09 COT" finished-at="2021-03-15T05:03:09 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dismantle -->
+      </class> <!-- endava.UI_Tests -->
+    </test> <!-- Tests -->
+  </suite> <!-- UI_Automation -->
+</testng-results>
