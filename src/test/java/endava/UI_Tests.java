@@ -7,13 +7,28 @@ import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-
 public class UI_Tests extends Hooks{
 
     @Test
     public void signUp(){
-        SignUpPage signUp = landing.redirect();
-        signUp.SignUp(props.getProperty("name"), props.getProperty("lastName"), props.getProperty("email"), props.getProperty("password"));
+        SignUpPage signUp = landing.singUpRedirect(props.getProperty("signUp"));
+        assertThat("The user did not logged in",
+                signUp.SignUp(props.getProperty("name"), props.getProperty("lastName"), props.getProperty("email"), props.getProperty("password")),
+                equalTo("true"));
+    }
+
+    @Test
+    public void signIn(){
+        SignInPage signIn = landing.signInRedirect(props.getProperty("signIn"));
+        assertThat("The user did not logged in",
+                signIn.signIn(props.getProperty("email"), props.getProperty("password")), equalTo("true"));
+    }
+
+    @Test
+    public void wrongSignIn(){
+        SignInPage signIn = landing.signInRedirect(props.getProperty("signIn"));
+        assertThat("The user did logged in",
+                signIn.signIn(props.getProperty("email"), props.getProperty("notPassword")), equalTo(props.getProperty("wrongLogIn")));
     }
 
     @Test
@@ -34,7 +49,7 @@ public class UI_Tests extends Hooks{
         String query = props.getProperty("filterPrice");
         ResultsPage results = landing.search(query);
         String filteredPrice = results.pricerFilter("1,200", "2,300");
-        // TO DO: Replace the hard-coded values. Find out why does not work when the xpaths are create with the parameters of the query
+        // TO DO: Replace the hard-coded values. Find out why does not work when the XPaths are create with the parameters of the query
         assertThat(props.getProperty("wrongAssert"), filteredPrice, equalTo("$1,200 – $2,300"));
     }
 
@@ -46,5 +61,4 @@ public class UI_Tests extends Hooks{
         String criteria = driver.getCurrentUrl();
         assertThat("The order to see the items was not implemented", criteria.endsWith("price%7Cdesc"));
     }
-
 }

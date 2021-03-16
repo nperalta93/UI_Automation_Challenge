@@ -36,6 +36,6 @@ public class Hooks {
 
     @AfterTest
     public void dismantle(){
-        //driver.quit();
+        driver.quit();
     }
 }

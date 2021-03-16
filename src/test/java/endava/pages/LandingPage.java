@@ -1,11 +1,12 @@
 package endava.pages;
 
+import endava.SignInPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LandingPage{
 
-    private final By signUpLink = By.xpath("//a[@href='/signup']");
+    private By sign;
     private final By searchBar = By.cssSelector("input[placeholder='Shop for used & new music gear...']");
     private final By searchButton = By.cssSelector(".site-search__controls__submit");
     private final By category = By.cssSelector(".category-flyout-header__link[data-header-category='drums']");
@@ -22,9 +23,16 @@ public class LandingPage{
         return new ResultsPage(driver, query);
     }
 
-    public SignUpPage redirect(){
-        driver.findElement(signUpLink).click();
+    public SignUpPage singUpRedirect(String query){
+        sign = By.xpath("//a[@href='/" + query + "']");
+        driver.findElement(sign).click();
         return new SignUpPage(driver);
+    }
+
+    public SignInPage signInRedirect(String query){
+        sign = By.xpath("//a[@href='/" + query + "']");
+        driver.findElement(sign).click();
+        return new SignInPage(driver);
     }
 
     public DrumsPercussionPage browseCategory(){

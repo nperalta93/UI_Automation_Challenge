@@ -14,5 +14,4 @@ public class DrumsPercussionPage {
     public String getTitle(){
         return driver.findElement(categoryTitle).getText();
     }
-
 }
