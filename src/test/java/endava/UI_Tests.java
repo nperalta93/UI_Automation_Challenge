@@ -48,7 +48,7 @@ public class UI_Tests extends Hooks{
     public void filterPrice(){
         String query = props.getProperty("filterPrice");
         ResultsPage results = landing.search(query);
-        String filteredPrice = results.pricerFilter("1,200", "2,300");
+        String filteredPrice = results.priceFilter("1,200", "2,300");
         // TO DO: Replace the hard-coded values. Find out why does not work when the XPaths are create with the parameters of the query
         assertThat(props.getProperty("wrongAssert"), filteredPrice, equalTo("$1,200 – $2,300"));
     }

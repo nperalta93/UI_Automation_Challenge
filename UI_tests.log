@@ -1,0 +1,210 @@
+10:07:03.395 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:07:03.911 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:07:04.082 [main][browseCategory] INFO  endava.pages.LandingPage - Redirected to the subcategory requested
+10:07:14.828 [main][search] TRACE endava.pages.LandingPage - Enter
+10:07:14.829 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:07:15.517 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:07:15.674 [main][search] INFO  endava.pages.LandingPage - Item found
+10:07:15.675 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:07:15.679 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:07:19.850 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:07:27.881 [main][search] TRACE endava.pages.LandingPage - Enter
+10:07:27.881 [main][search] DEBUG endava.pages.LandingPage - Typing Condenser Microphones in the search bar
+10:07:28.619 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:07:28.704 [main][search] INFO  endava.pages.LandingPage - Item found
+10:07:28.704 [main][highToLow] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:07:28.709 [main][highToLow] DEBUG endava.pages.ResultsPage - Applying order
+10:07:42.374 [main][search] TRACE endava.pages.LandingPage - Enter
+10:07:42.374 [main][search] DEBUG endava.pages.LandingPage - Typing Fender Stratocaster in the search bar
+10:07:42.959 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:07:43.222 [main][search] INFO  endava.pages.LandingPage - Item found
+10:07:43.223 [main][getFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:07:43.226 [main][getFilter] INFO  endava.pages.ResultsPage - Filter of the search founded
+10:07:57.313 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:07:57.313 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:07:57.831 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:07:57.833 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:07:57.839 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:07:59.294 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:08:03.961 [main][signIn] INFO  endava.SignInPage - Successful login
+10:08:20.807 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:08:20.807 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:08:22.776 [main][singUpRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:08:22.778 [main][SignUp] DEBUG endava.pages.SignUpPage - Waiting on the page to be fully loaded
+10:08:22.781 [main][SignUp] DEBUG endava.pages.SignUpPage - Typing in the form requests to create a new account
+10:08:23.325 [main][SignUp] DEBUG endava.pages.SignUpPage - Clicking to create a new account
+10:08:26.781 [main][SignUp] INFO  endava.pages.SignUpPage - Account created
+10:08:35.690 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:08:35.691 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:08:36.005 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:08:36.005 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:08:36.009 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:08:36.418 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:08:38.639 [main][signIn] INFO  endava.SignInPage - The credentials are incorrect. Log in is not possible
+10:10:23.896 [main][search] TRACE endava.pages.LandingPage - Enter
+10:10:23.900 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:10:24.224 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:10:24.484 [main][search] INFO  endava.pages.LandingPage - Item found
+10:10:24.486 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:10:24.492 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:10:29.014 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:10:29.518 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the filter to be applied to the page
+10:10:29.522 [main][priceFilter] INFO  endava.pages.ResultsPage - Filter applied successfully
+10:12:25.757 [main][search] TRACE endava.pages.LandingPage - Enter
+10:12:25.761 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:12:25.956 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:12:26.140 [main][search] INFO  endava.pages.LandingPage - Item found
+10:12:26.141 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:12:26.146 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:12:30.022 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:12:30.682 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the filter to be applied to the page
+10:12:30.687 [main][priceFilter] INFO  endava.pages.ResultsPage - Filter applied successfully
+10:16:51.696 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:16:51.966 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:16:52.163 [main][browseCategory] INFO  endava.pages.LandingPage - Redirected to the subcategory requested
+10:17:01.562 [main][search] TRACE endava.pages.LandingPage - Enter
+10:17:01.562 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:17:02.759 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:17:03.319 [main][search] INFO  endava.pages.LandingPage - Item found
+10:17:03.321 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:17:03.324 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:17:07.993 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:17:15.572 [main][search] TRACE endava.pages.LandingPage - Enter
+10:17:15.573 [main][search] DEBUG endava.pages.LandingPage - Typing Condenser Microphones in the search bar
+10:17:15.898 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:17:16.420 [main][search] INFO  endava.pages.LandingPage - Item found
+10:17:16.420 [main][highToLow] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:17:16.423 [main][highToLow] DEBUG endava.pages.ResultsPage - Applying order
+10:17:27.339 [main][search] TRACE endava.pages.LandingPage - Enter
+10:17:27.339 [main][search] DEBUG endava.pages.LandingPage - Typing Fender Stratocaster in the search bar
+10:17:27.831 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:17:28.407 [main][search] INFO  endava.pages.LandingPage - Item found
+10:17:28.407 [main][getFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:17:28.412 [main][getFilter] INFO  endava.pages.ResultsPage - Filter of the search founded
+10:17:40.858 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:17:40.858 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:17:41.241 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:17:41.242 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:17:41.246 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:17:41.864 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:17:45.472 [main][signIn] INFO  endava.SignInPage - Successful login
+10:17:54.215 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:17:54.215 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:17:55.759 [main][singUpRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:17:55.760 [main][SignUp] DEBUG endava.pages.SignUpPage - Waiting on the page to be fully loaded
+10:17:55.764 [main][SignUp] DEBUG endava.pages.SignUpPage - Typing in the form requests to create a new account
+10:17:56.404 [main][SignUp] DEBUG endava.pages.SignUpPage - Clicking to create a new account
+10:17:59.527 [main][SignUp] INFO  endava.pages.SignUpPage - Account created
+10:18:08.517 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:18:08.517 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:18:09.033 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:18:09.034 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:18:09.038 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:18:09.591 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:18:11.935 [main][signIn] INFO  endava.SignInPage - The credentials are incorrect. Log in is not possible
+10:21:38.580 [main][search] TRACE endava.pages.LandingPage - Enter
+10:21:38.587 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:21:38.779 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:21:39.004 [main][search] INFO  endava.pages.LandingPage - Item found
+10:21:39.006 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:21:39.010 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:21:43.492 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:21:43.931 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the filter to be applied to the page
+10:21:43.935 [main][priceFilter] INFO  endava.pages.ResultsPage - Filter applied successfully
+10:22:29.462 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:22:29.858 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:22:30.022 [main][browseCategory] INFO  endava.pages.LandingPage - Redirected to the subcategory requested
+10:22:38.952 [main][search] TRACE endava.pages.LandingPage - Enter
+10:22:38.952 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:22:39.210 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:22:39.721 [main][search] INFO  endava.pages.LandingPage - Item found
+10:22:39.723 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:22:39.727 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:22:44.093 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:22:44.591 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the filter to be applied to the page
+10:22:44.597 [main][priceFilter] INFO  endava.pages.ResultsPage - Filter applied successfully
+10:22:54.150 [main][search] TRACE endava.pages.LandingPage - Enter
+10:22:54.150 [main][search] DEBUG endava.pages.LandingPage - Typing Condenser Microphones in the search bar
+10:22:54.645 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:22:54.865 [main][search] INFO  endava.pages.LandingPage - Item found
+10:22:54.865 [main][highToLow] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:22:54.870 [main][highToLow] DEBUG endava.pages.ResultsPage - Applying order
+10:23:04.968 [main][search] TRACE endava.pages.LandingPage - Enter
+10:23:04.968 [main][search] DEBUG endava.pages.LandingPage - Typing Fender Stratocaster in the search bar
+10:23:05.666 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:23:05.799 [main][search] INFO  endava.pages.LandingPage - Item found
+10:23:05.799 [main][getFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:23:05.803 [main][getFilter] INFO  endava.pages.ResultsPage - Filter of the search founded
+10:23:18.267 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:23:18.268 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:23:18.372 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:23:18.373 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:23:18.379 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:23:18.977 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:23:19.093 [main][signIn] INFO  endava.SignInPage - The credentials are incorrect. Log in is not possible
+10:23:28.920 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:23:28.921 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:23:31.591 [main][singUpRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:23:31.592 [main][SignUp] DEBUG endava.pages.SignUpPage - Waiting on the page to be fully loaded
+10:23:31.596 [main][SignUp] DEBUG endava.pages.SignUpPage - Typing in the form requests to create a new account
+10:23:32.090 [main][SignUp] DEBUG endava.pages.SignUpPage - Clicking to create a new account
+10:23:35.508 [main][SignUp] INFO  endava.pages.SignUpPage - Account created
+10:23:46.991 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:23:46.991 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:23:47.101 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:23:47.102 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:23:47.111 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:23:48.696 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:23:50.689 [main][signIn] INFO  endava.SignInPage - The credentials are incorrect. Log in is not possible
+10:27:37.566 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:27:37.569 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:27:37.775 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:27:37.778 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:27:37.784 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:27:38.406 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:27:42.015 [main][signIn] INFO  endava.SignInPage - Successful login
+10:28:34.156 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:28:34.338 [main][browseCategory] DEBUG endava.pages.LandingPage - Clicking on the category selected
+10:28:34.686 [main][browseCategory] INFO  endava.pages.LandingPage - Redirected to the subcategory requested
+10:28:43.192 [main][search] TRACE endava.pages.LandingPage - Enter
+10:28:43.192 [main][search] DEBUG endava.pages.LandingPage - Typing Gibson Les Paul in the search bar
+10:28:43.859 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:28:44.214 [main][search] INFO  endava.pages.LandingPage - Item found
+10:28:44.216 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:28:44.223 [main][priceFilter] DEBUG endava.pages.ResultsPage - Typing in the values of the price filter
+10:28:49.880 [main][priceFilter] DEBUG endava.pages.ResultsPage - Clicking on the button to set the filter
+10:28:50.434 [main][priceFilter] DEBUG endava.pages.ResultsPage - Waiting on the filter to be applied to the page
+10:28:50.439 [main][priceFilter] INFO  endava.pages.ResultsPage - Filter applied successfully
+10:28:59.470 [main][search] TRACE endava.pages.LandingPage - Enter
+10:28:59.471 [main][search] DEBUG endava.pages.LandingPage - Typing Condenser Microphones in the search bar
+10:29:00.091 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:29:00.312 [main][search] INFO  endava.pages.LandingPage - Item found
+10:29:00.313 [main][highToLow] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:29:00.316 [main][highToLow] DEBUG endava.pages.ResultsPage - Applying order
+10:29:12.460 [main][search] TRACE endava.pages.LandingPage - Enter
+10:29:12.461 [main][search] DEBUG endava.pages.LandingPage - Typing Fender Stratocaster in the search bar
+10:29:13.292 [main][search] DEBUG endava.pages.LandingPage - Clicking on the search button
+10:29:13.828 [main][search] INFO  endava.pages.LandingPage - Item found
+10:29:13.828 [main][getFilter] DEBUG endava.pages.ResultsPage - Waiting on the page to be fully loaded
+10:29:13.833 [main][getFilter] INFO  endava.pages.ResultsPage - Filter of the search founded
+10:29:25.625 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:29:25.625 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:29:25.927 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:29:25.928 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:29:25.932 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:29:26.351 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:29:30.714 [main][signIn] INFO  endava.SignInPage - Successful login
+10:29:36.312 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:29:36.312 [main][singUpRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:29:38.092 [main][singUpRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:29:38.094 [main][SignUp] DEBUG endava.pages.SignUpPage - Waiting on the page to be fully loaded
+10:29:38.098 [main][SignUp] DEBUG endava.pages.SignUpPage - Typing in the form requests to create a new account
+10:29:38.546 [main][SignUp] DEBUG endava.pages.SignUpPage - Clicking to create a new account
+10:29:41.759 [main][SignUp] INFO  endava.pages.SignUpPage - Account created
+10:29:49.894 [main][signInRedirect] DEBUG endava.pages.LandingPage - Building the Xpath for the redirection
+10:29:49.894 [main][signInRedirect] DEBUG endava.pages.LandingPage - Clicking on the option requested
+10:29:50.204 [main][signInRedirect] INFO  endava.pages.LandingPage - Redirected to the requested form
+10:29:50.204 [main][signIn] DEBUG endava.SignInPage - Waiting on the page to be fully loaded
+10:29:50.208 [main][signIn] DEBUG endava.SignInPage - Sending credentials to log in
+10:29:50.726 [main][signIn] DEBUG endava.SignInPage - Clicking the log in button
+10:29:52.720 [main][signIn] INFO  endava.SignInPage - The credentials are incorrect. Log in is not possible
