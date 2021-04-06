@@ -1,23 +1,24 @@
-package endava;
+package endava.pages;
 
 import static org.apache.logging.log4j.LogManager.getLogger;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class SignInPage {
-    private WebDriver driver;
+public class SignInPage extends BasePage{
     public SignInPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     private final By email = By.id("user_session_login");
     private final By password = By.id("user_session_password");
     private final By loginButton = By.xpath("//*[@class='form-group__fields']/*[@value='Log In']");
+    private final By logged = By.xpath("//a[@href='/users/activations']");
+    private final By wrongCredentials = By.cssSelector(".alert-box.alert-box--red.scaling-mb-2.size-90");
     private static final Logger log = getLogger(SignInPage.class.getName());
-    private By logged;
 
     public String signIn (String username, String pw){
         log.debug("Waiting on the page to be fully loaded");
@@ -27,15 +28,10 @@ public class SignInPage {
         driver.findElement(password).sendKeys(pw);
         log.debug("Clicking the log in button");
         driver.findElement(loginButton).click();
-        logged = By.cssSelector(".site-bg--white [data-signed-in]");
-        if (!driver.findElement(logged).getAttribute("data-signed-in").equals("true")) {
-            By wrongCredentials = By.cssSelector(".alert-box.alert-box--red.scaling-mb-2.size-90");
-            log.info("The credentials are incorrect. Log in is not possible");
+        try{
+            return driver.findElement(logged).getText();
+        } catch (NoSuchElementException e) {
             return driver.findElement(wrongCredentials).getText();
-        }
-        else {
-            log.info("Successful login");
-            return driver.findElement(logged).getAttribute("data-signed-in");
         }
     }
 }

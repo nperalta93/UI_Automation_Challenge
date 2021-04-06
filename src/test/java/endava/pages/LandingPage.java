@@ -1,15 +1,13 @@
 package endava.pages;
 
-import endava.SignInPage;
 import static org.apache.logging.log4j.LogManager.getLogger;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LandingPage{
+public class LandingPage extends BasePage{
 
     private By sign;
-    private WebDriver driver;
     private final By searchBar = By.cssSelector("input[placeholder='Shop for used & new music gear...']");
     private final By searchButton = By.cssSelector(".site-search__controls__submit");
     private final By category = By.cssSelector(".category-flyout-header__link[data-header-category='drums']");
@@ -17,11 +15,10 @@ public class LandingPage{
     private static final Logger log = getLogger(LandingPage.class.getName());
 
     public LandingPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
 
     public ResultsPage search(String query){
-        log.entry();
         log.debug("Typing " + query + " in the search bar");
         driver.findElement(searchBar).sendKeys(query);
         log.debug("Clicking on the search button");
@@ -48,13 +45,13 @@ public class LandingPage{
         return new SignInPage(driver);
     }
 
-    public DrumsPercussionPage browseCategory(){
+    public CategoryPage browseCategory(){
         log.debug("Clicking on the category selected");
         driver.findElement(category).click();
         log.debug("Clicking on the category selected");
         driver.findElement(subCategory).click();
         log.info("Redirected to the subcategory requested");
-        return new DrumsPercussionPage(driver);
+        return new CategoryPage(driver);
     }
 
 

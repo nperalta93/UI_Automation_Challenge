@@ -1,7 +1,8 @@
 package endava;
 
-import endava.pages.DrumsPercussionPage;
+import endava.pages.CategoryPage;
 import endava.pages.ResultsPage;
+import endava.pages.SignInPage;
 import endava.pages.SignUpPage;
 import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,14 +15,14 @@ public class UI_Tests extends Hooks{
         SignUpPage signUp = landing.singUpRedirect(props.getProperty("signUp"));
         assertThat("The user did not logged in",
                 signUp.SignUp(props.getProperty("name"), props.getProperty("lastName"), props.getProperty("email"), props.getProperty("password")),
-                equalTo("true"));
+                equalTo(props.getProperty("email")));
     }
 
     @Test
     public void signIn(){
         SignInPage signIn = landing.signInRedirect(props.getProperty("signIn"));
         assertThat("The user did not logged in",
-                signIn.signIn(props.getProperty("email"), props.getProperty("password")), equalTo("true"));
+                signIn.signIn(props.getProperty("email"), props.getProperty("password")), equalTo(props.getProperty("email")));
     }
 
     @Test
@@ -40,7 +41,7 @@ public class UI_Tests extends Hooks{
 
     @Test
     public void browseCategory(){
-        DrumsPercussionPage category = landing.browseCategory();
+        CategoryPage category = landing.browseCategory();
         assertThat(props.getProperty("wrongAssert"), category.getTitle(), equalTo("Acoustic Drums"));
     }
 
@@ -49,7 +50,6 @@ public class UI_Tests extends Hooks{
         String query = props.getProperty("filterPrice");
         ResultsPage results = landing.search(query);
         String filteredPrice = results.priceFilter("1,200", "2,300");
-        // TO DO: Replace the hard-coded values. Find out why does not work when the XPaths are create with the parameters of the query
         assertThat(props.getProperty("wrongAssert"), filteredPrice, equalTo("$1,200 – $2,300"));
     }
 

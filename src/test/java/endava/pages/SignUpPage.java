@@ -5,21 +5,22 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import static org.apache.logging.log4j.LogManager.getLogger;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class SignUpPage {
+public class SignUpPage extends BasePage{
 
-    private WebDriver driver;
     public SignUpPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     private final By firstName = By.id("user_first_name");
     private final By lastName =  By.id("user_last_name");
     private final By email = By.id("user_email");
     private final By password = By.id("user_password");
-    private By logged;
+    private By logged = By.xpath("//a[@href='/users/activations']");
     private static final Logger log = getLogger(SignUpPage.class.getName());
 
     public String SignUp(String propName, String propLastName, String propEmail, String propPassword){
@@ -32,8 +33,9 @@ public class SignUpPage {
         driver.findElement(password).sendKeys(propPassword);
         log.debug("Clicking to create a new account");
         driver.findElement(password).sendKeys(Keys.ENTER);
-        logged = By.cssSelector(".site-bg--white [data-signed-in]");
         log.info("Account created");
-        return driver.findElement(logged).getAttribute("data-signed-in");
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(logged));
+        return driver.findElement(logged).getText();
     }
 }

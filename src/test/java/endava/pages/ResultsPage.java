@@ -4,23 +4,20 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver;
 import static org.apache.logging.log4j.LogManager.getLogger;
 
 import java.util.concurrent.TimeUnit;
 
-public class ResultsPage {
-    private WebDriver driver;
+public class ResultsPage extends BasePage{
     private final By filteredBy;
     private final By minValue = By.xpath("//*[@id='minValue']");
     private final By maxValue = By.xpath("//*[@id='maxValue']");
-//  TO DO: Replace the hard-coded values. Find out why does not work when the XPaths are create with the parameters of the query
     private final By filterPrice = By.xpath("//*[@class='search-pill__term'][contains(text(), '$1,200 – $2,300')]");
     private final By order = By.xpath("//*[@id='sort']/option[4]");
     private static final Logger log = getLogger(ResultsPage.class.getName());
 
     public ResultsPage(WebDriver driver, String query) {
-        this.driver = driver;
+        super(driver);
         this.filteredBy = By.xpath("//*[@class='search-pill__term'][contains(text(),'" + query + "')]");
     }
     public String getFilter(){
